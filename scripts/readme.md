@@ -1,6 +1,15 @@
 # Sobre o PEDA
 PEDA é um programa escrito em Python para te ajudar a ter uma melhor visualização da execução do programa. Entre uma das suas melhores características está a visualização dos valores presentes nos registradores a cada pausa do programa.
 
+# Instalação
+Para utilizar o script, já tendo o repositório em seu computador, basta:
+```
+$ cd scripts
+$ chmod 744 peda.sh
+$ ./peda.sh
+```
+**OBS**: Esse script sobrescreverá qualquer configuração prévie do seu .gdbinit. Estou assumindo que você não utilizava o GDB antes.
+
 # Como utilizar
 Todos os comandos do GDB que você já conhece também funcionam com o PEDA.
 Na minha opinião, a maior parte da análise dos programas produzidos ao longo do curso pode ser feita com poucos comandos:
