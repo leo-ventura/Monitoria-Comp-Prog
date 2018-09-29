@@ -2,7 +2,7 @@
 
 # baixando peda do github se já não estiver instalado
 echo "[*] Se você tiver acabado de baixar o PEDA, o comando locate não irá encontrá-lo."
-echo "[*] Para achá-lo, rode o script com -f como argumento (./peda.sh -f)"
+echo "[*] Para achá-lo, rode o script com -f como argumento (./peda.sh -f). Essa opção levará mais tempo."
 
 if [[ $1 = "-f" ]]; then
     peda_path=$(find / -iname "peda.py" 2> /dev/null)
@@ -15,5 +15,5 @@ if [[ $peda_path = "" ]]; then
     $peda_path="$(pwd)/peda/peda.py"
 fi
 
-echo "source $peda_path" > .gdbinit
-echo "set disassembly-flavor att" >> .gdbinit
+echo "source $peda_path" > $HOME/.gdbinit
+echo "set disassembly-flavor att" >> $HOME/.gdbinit
