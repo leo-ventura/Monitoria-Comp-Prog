@@ -3,6 +3,7 @@
 # baixando peda do github se já não estiver instalado
 echo "[*] Se você tiver acabado de baixar o PEDA, o comando locate não irá encontrá-lo."
 echo "[*] Para achá-lo, rode o script com -f como argumento (./peda.sh -f). Essa opção levará mais tempo."
+echo "[*] Se você não tiver o PEDA em seu computador ainda, ele usará o git para baixá-lo."
 
 if [[ $1 = "-f" ]]; then
     peda_path=$(find / -iname "peda.py" 2> /dev/null)
