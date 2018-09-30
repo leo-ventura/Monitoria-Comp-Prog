@@ -27,5 +27,7 @@ Na minha opinião, a maior parte da análise dos programas produzidos ao longo d
 - ```info r```: lista os registradores e seus valores.
 - ```info r eax```: lista o valor do registrador eax.
 
+**OBS**: Para utilizar os comandos exclusivos do PEDA, talvez seja necessário mudar a sintaxe diretamente no código fonte. Para fazer isso, rode o script com a flag -p (`./peda.sh -p`) que o sed fará a mudança para você.
+
 # Dúvidas
 Qualquer dúvida em relação à instalação ou utilização do GDB, PEDA ou matéria, sinta-se à vontade para entrar em contato comigo.
