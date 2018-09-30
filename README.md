@@ -6,3 +6,15 @@ O Assembly visto durante o curso é o da arquitetura IA-32 e uma maior explicaç
 
 # Recursos
 Uma das melhores coisas que você pode fazer para se enturmar melhor com a matéria é fazer seus próprios programas e analisar como eles funcionam "por trás dos panos". Uma ótima ferramente para te auxiliar nesse processo é o GDB. Para melhorar esse processo de análise dos códigos, recomendo que você utilize o [PEDA](https://github.com/longld/peda.git). No diretório scripts, disponibilizei um script para automatizar o processo de instalação do PEDA para que ele utilize a sintaxe da AT&T.
+
+# Ambiente
+Todo material desenvolvido para a monitoria tem como alvo um sistema operacional que use Linux.
+- Numa máquina 64 bits, para compilar utilize sempre a flag -m32.
+    Ex: `gcc -m32 exemplo_switch_1.c`.
+- Numa máquina 32 bits, basta compilar normalmente com o GCC.
+    Ex: `gcc exemplo_switch_1.c`.
+
+**OBS**: Não posso garantir que os códigos funcionarão no Windows Subsystem for Linux. Para ser sincero, acredito que não funcionará nele, mas fica a seu critério testar ou não.
+
+# Dúvidas
+Sinta-se livre para entrar em contato comigo para tirar qualquer tipo de dúvida em relação à matéria ou configuração do ambiente.
