@@ -16,5 +16,10 @@ if [[ $peda_path = "" ]]; then
     $peda_path="$(pwd)/peda/peda.py"
 fi
 
+if [[ $1 = "-p" ]] || [[ $2 = "-p" ]]; then
+    # substitui a sintaxe intel por att na linha 777 do arquivo peda.py
+    sed -i '777s/intel/att/' $peda_path
+fi
+
 echo "source $peda_path" > $HOME/.gdbinit
 echo "set disassembly-flavor att" >> $HOME/.gdbinit
