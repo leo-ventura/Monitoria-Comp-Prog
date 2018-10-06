@@ -3,3 +3,5 @@ Canary é um valor que fica abaixo do endereço do endereço de retorno da funç
 
 # Análise
 Comente a parte do código que faz a restauração do valor do canary. Compare a saída dele com e sem o comentário. Se quiser, utilize também o GDB para acompanhar a execução.
+
+**OBS**: Esse estudo sobre o canary fica apenas como uma curiosidade sobre a matéria.
