@@ -5,7 +5,8 @@ A matéria busca explicar como é organizada a estrutura de um computador. Uma r
 O Assembly visto durante o curso é o da arquitetura IA-32 e uma maior explicação sobre essa arquitetura pode ser encontrada [aqui](https://en.wikipedia.org/wiki/IA-32). A sintaxe adotada é a da AT&T e você pode ver melhor sobre [aqui](https://en.wikibooks.org/wiki/X86_Assembly/GAS_Syntax).
 
 # Recursos
-Uma das melhores coisas que você pode fazer para se enturmar melhor com a matéria é fazer seus próprios programas e analisar como eles funcionam "por trás dos panos". Uma ótima ferramente para te auxiliar nesse processo é o GDB. Para melhorar esse processo de análise dos códigos, recomendo que você utilize o [PEDA](https://github.com/longld/peda.git). No diretório scripts, disponibilizei um script para automatizar o processo de instalação do PEDA para que ele utilize a sintaxe da AT&T.
+- [PEDA](https://github.com/longld/peda): Uma das melhores coisas que você pode fazer para se enturmar melhor com a matéria é fazer seus próprios programas e analisar como eles funcionam "por trás dos panos". Uma ótima ferramente para te auxiliar nesse processo é o GDB. Para melhorar esse processo de análise dos códigos, recomendo que você utilize o PEDA. No diretório scripts, disponibilizei um script para automatizar o processo de instalação do PEDA para que ele utilize a sintaxe da AT&T.
+- [Godbolt](https://godbolt.org/): Godbolt é um compilador online que te mostra o assembly de forma instantânea após colar seu código na parte à direita do site. Lembre sempre de deixar a opção de Intel desmarcada para ver a sintaxe do jeito que aprendemos no curso. Não esqueça, também, de incluir -m32 nas opções de compilação.
 
 # Ambiente
 Todo material desenvolvido para a monitoria tem como alvo um sistema operacional que use Linux.
