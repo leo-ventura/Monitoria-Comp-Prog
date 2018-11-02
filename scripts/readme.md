@@ -19,7 +19,7 @@ Na minha opinião, a maior parte da análise dos programas produzidos ao longo d
 - ```disas main``` ou ```disassemble main```: mostra o assembly da função main.
 - ```set $eax = 5```: troca o valor do registrador eax para 5.
 - ```set *0x08000500 = 5```: troca o valor presente no endereço 0x08000500 para 5.
-- ```j main+5```: pula para a linha main+5.
+- ```j *main+5```: pula para a linha main+5.
 - ```j *0x08000500```: pula para o endereço 0x08000500.
 - ```info b```: lista os breakpoints.
 - ```info file```: lista onde começam as seções do arquivo.
