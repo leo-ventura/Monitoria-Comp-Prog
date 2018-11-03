@@ -16,6 +16,10 @@ Na minha opinião, a maior parte da análise dos programas produzidos ao longo d
 - ```b main``` ou ```break main```: coloca um breakpoint na main.
 - ```r arg``` ou ```run arg```: roda o programa com arg como argumento.
 - ```n``` ou ```next```: pula para a próxima instrução.
+- ```si```: single step -> executa apenas um código de máquina e retorna o controle para o debugger (tem uma pequena diferença do next).
+- ```p/x $eax```: printa o valor de $eax.
+- ```p/x *$eax```: se eax contém um endereço de memória, printa o conteúdo desse endereço.
+- ```p/x *0xffffd1dc```: printa o conteúdo de 0xffffd1dc.
 - ```disas main``` ou ```disassemble main```: mostra o assembly da função main.
 - ```set $eax = 5```: troca o valor do registrador eax para 5.
 - ```set *0x08000500 = 5```: troca o valor presente no endereço 0x08000500 para 5.
